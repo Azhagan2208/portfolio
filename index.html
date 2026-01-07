@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Azhagan NJ - Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -31,11 +32,20 @@
 
     <!-- Home Section -->
     <section id="home" class="home">
+        <canvas id="particles-canvas"></canvas>
         <div class="home-content">
             <h1 class="home-title">Hi, I'm <span class="highlight">Azhagan Natrajan</span></h1>
-            <p class="home-subtitle">Web Developer & Designer</p>
-            <p class="home-description">I create beautiful and functional websites</p>
-            <a href="#contact" class="btn-primary">Get In Touch</a>
+            <p class="home-subtitle">Full Stack Developer | FastAPI & Python Specialist</p>
+            <p class="home-description">Based in Tamil Nadu, India. I specialize in building secure, high-performance
+                web applications and intuitive user interfaces using modern technologies.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <div class="hero-socials">
+                    <a href="https://github.com/Azhagan2208" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/azhagan-natrajan/" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -49,10 +59,13 @@
                     <img src="./assets/img.jpeg" alt="Your Name" class="profile-photo">
                 </div>
                 <div class="about-text">
-                    <p>Hello! I'm a passionate web developer with a love for creating beautiful, user-friendly websites.
-                        I enjoy turning complex problems into simple, elegant solutions.</p>
-                    <p>With expertise in modern web technologies, I bring ideas to life through clean code and creative
-                        design. I'm always eager to learn new technologies and take on challenging projects.</p>
+                    <p>Hello! I'm Azhagan, a passionate developer from <strong>Komarapalayam, Tamil Nadu</strong>. I
+                        have a deep love for coding and problem-solving, specializing in the <strong>Python
+                            ecosystem</strong>.</p>
+                    <p>I have built robust applications using <strong>FastAPI</strong> and <strong>Supabase</strong>,
+                        such as anonymous Q&A platforms and student management systems. I am constantly learning and
+                        expanding my skills in both frontend and backend technologies to create seamless digital
+                        experiences.</p>
                 </div>
             </div>
         </div>
@@ -67,8 +80,10 @@
                     <div class="project-image">
                         <img src="./assets/questup.jpeg" alt="Questup Project" class="project-thumbnail">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://questup25.netlify.app/" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Azhagan2208/questup-frontend.git" class="project-link"
+                                target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -89,8 +104,10 @@
                     <div class="project-image">
                         <img src="./assets/fastapi.jpeg" alt="FastAPI Project" class="project-thumbnail">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://std-mgmt.onrender.com" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Azhagan2208/std-mgmt.git" class="project-link"
+                                target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -107,8 +124,10 @@
                     <div class="project-image">
                         <img src="./assets/eduport.png" alt="eduport" class="project-thumbnail">
                         <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="https://eduport22.netlify.app/" class="project-link" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Azhagan2208/static-webpage.git" class="project-link"
+                                target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
@@ -217,6 +236,64 @@
                 <div class="skill-icon"><i class="fas fa-code"></i></div>
                 <div class="skill-icon"><i class="fas fa-database"></i></div>
                 <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                <div class="skill-icon"><i class="fab fa-github"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- English Language Skills Section -->
+    <section id="els" class="els">
+        <div class="container">
+            <h2 class="section-title">English Proficiency</h2>
+            <div class="els-content">
+                <!-- Speaking -->
+                <div class="els-card">
+                    <div class="els-icon"><i class="fas fa-comments"></i></div>
+                    <h3 class="els-title">Speaking</h3>
+                    <div class="els-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- Reading -->
+                <div class="els-card">
+                    <div class="els-icon"><i class="fas fa-book-open"></i></div>
+                    <h3 class="els-title">Reading</h3>
+                    <div class="els-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <!-- Writing -->
+                <div class="els-card">
+                    <div class="els-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3 class="els-title">Writing</h3>
+                    <div class="els-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star empty"></i>
+                        <i class="fas fa-star empty"></i>
+                    </div>
+                </div>
+                <!-- Listening -->
+                <div class="els-card">
+                    <div class="els-icon"><i class="fas fa-headphones"></i></div>
+                    <h3 class="els-title">Listening</h3>
+                    <div class="els-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star empty"></i>
+                        <i class="fas fa-star empty"></i>
+                        <i class="fas fa-star empty"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -254,13 +331,13 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/azhagan-natrajan/" class="social-link"><i
+                        <a href="https://www.linkedin.com/in/azhagan-natrajan/" class="social-link" target="_blank"><i
                                 class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Azhagan2208" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/Azhagan2208" class="social-link" target="_blank"><i
+                                class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
-                    <input type="hidden" name="access_key" value="4d464ac0-10d9-4bd1-8078-c4b8f5eb0304">
+                <form class="contact-form" id="contactForm">
                     <div class="form-group">
                         <input type="text" id="name" name="name" placeholder="Your Name" required>
                     </div>
@@ -282,6 +359,15 @@
             <p>&copy; 2025 Azhagan. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Custom Alert -->
+    <div id="custom-alert" class="custom-alert">
+        <div class="alert-content">
+            <i id="alert-icon" class="fas"></i>
+            <p id="alert-message"></p>
+            <button id="alert-close">&times;</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
