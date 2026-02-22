@@ -291,23 +291,64 @@ section {
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.about-image {
+.polaroid-gallery {
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
-.profile-photo {
-    width: 260px;
+.polaroid-card {
+    position: relative;
+    background: #ffffff;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
     height: 260px;
-    border-radius: 50%;
+}
+
+.polaroid-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.polaroid-card img {
+    width: 100%;
+    height: 85%;
     object-fit: cover;
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.polaroid-caption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    height: 20px;
+}
+
+.polaroid-card.card-1 {
+    transform: rotate(-8deg);
+}
+
+.polaroid-card.card-2 {
+    transform: rotate(3deg);
+}
+
+.polaroid-card.card-3 {
+    transform: rotate(-4deg);
+}
+
+.polaroid-card.card-4 {
+    transform: rotate(6deg);
 }
 
 .image-placeholder {
@@ -733,6 +774,16 @@ section {
         grid-template-columns: 1fr;
     }
 
+    .polaroid-gallery {
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .polaroid-card {
+        width: 180px;
+        height: 220px;
+    }
+
     .about-stats {
         grid-template-columns: 1fr;
     }
@@ -957,36 +1008,4 @@ section {
 .life-skills .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-/* Journey Section */
-.journey {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, #f0f4ff 0%, #f9f9f9 100%);
-}
-
-.journey-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.journey-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-}
-
-/* Responsive for Journey Section */
-@media (max-width: 768px) {
-    .journey {
-        padding: 3rem 0;
-    }
-
-    .journey-image {
-        max-width: 90%;
-    }
 }
