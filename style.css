@@ -958,3 +958,35 @@ section {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+
+/* Journey Section */
+.journey {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, #f0f4ff 0%, #f9f9f9 100%);
+}
+
+.journey-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.journey-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+/* Responsive for Journey Section */
+@media (max-width: 768px) {
+    .journey {
+        padding: 3rem 0;
+    }
+
+    .journey-image {
+        max-width: 90%;
+    }
+}
